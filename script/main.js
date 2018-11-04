@@ -41,7 +41,7 @@ var cookieDefault = {
     mZoom:100,
     mPos:0,
     glogic:'Open',
-    gerudoLogic:'startWith',
+    gerudoLogic:'Default',
     prize:1,
     items:defaultItemGrid,
     obtainedItems:items,

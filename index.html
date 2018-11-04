@@ -41,24 +41,57 @@
             </fieldset>
             <fieldset>
                 <legend>Map Tracker</legend>
-                <input type="checkbox" name="showmap" checked='true' onchange="showTracker('mapdiv', this)">Enabled<br>
-                Size<input type="range" name='mapdivsize' value='100' max='200' min='1' onchange="setZoom('mapdiv', this)">
-                <span id='mapdivsize'>100%</span><br>
-                Position:
-                <input type='radio' name='mapposition' value='Below' checked='true' onclick="setOrder(true)">Below
-                <input type='radio' name='mapposition' value='Side' onclick="setOrder(false)">Side<br>
-                <fieldset>
+                <div class='trackerOption'>
+                    <label>
+                        <input type="checkbox" name="showmap" checked='true' onchange="showTracker('mapdiv', this)">
+                        <span>Enabled</span>
+                    </label>
+                </div>
+                <div class='trackerOption'>
+                    <div class='trackerOptionText'>Size:</div>
+                    <input type="range" name='mapdivsize' value='100' max='200' min='1' onchange="setZoom('mapdiv', this)">
+                    <span id='mapdivsize'>100%</span>
+                </div>
+                <div class='trackerOption'>
+                    <div class='trackerOptionText'>Position:</div>
+                    <label>
+                        <input type='radio' id='mappositionBelow' name='mapposition' value='Below' checked='true' onclick="setOrder(true)">
+                        Below
+                    </label>
+                    <label>
+                        <input type='radio' id='mappositionSide' name='mapposition' value='Side' onclick="setOrder(false)">
+                        Side
+                    </label>
+                </div>
+                <fieldset id='rainbowBridgeLogicFieldset'>
                     <legend>Rainbow Bridge Logic</legend>
-                    <input type='radio' name='ganonlogic' value='Open' checked='true' onclick="setGanonLogic(this)">Open
-                    <input type='radio' name='ganonlogic' value='Vanilla' onclick="setGanonLogic(this)">Vanilla<br>
-                    <input type='radio' name='ganonlogic' value='Medallions' onclick="setGanonLogic(this)">Medallions<br>
-                    <input type='radio' name='ganonlogic' value='Dungeons' onclick="setGanonLogic(this)">Dungeons<br>
+                    <label class='fieldsetRadio'>
+                        <div>Open</div>
+                        <input type='radio' id='ganonlogicOpen' name='ganonlogic' value='Open' checked='true' onclick="setGanonLogic(this)">
+                    </label><br>
+                    <label class='fieldsetRadio'>
+                        <div>Vanilla</div>
+                        <input type='radio' id='ganonlogicVanilla' name='ganonlogic' value='Vanilla' onclick="setGanonLogic(this)">
+                    </label><br>
+                    <label class='fieldsetRadio'>
+                        <div>Medallions</div>
+                        <input type='radio' id='ganonlogicMedallions' name='ganonlogic' value='Medallions' onclick="setGanonLogic(this)">
+                    </label><br>
+                    <label class='fieldsetRadio'>
+                        <div>Dungeons</div>
+                        <input type='radio' id='ganonlogicDungeons' name='ganonlogic' value='Dungeons' onclick="setGanonLogic(this)">
+                    </label>
                 </fieldset>
-                <fieldset>
-                    <legend>Other Options</legend>
-                    Gerudo Fortress:
-                    <input type='radio' name='gerudoCard' value='default' checked='true' onclick='setGerudoCard(this)'>Default
-                    <input type='radio' name='gerudoCard' value='startWith' onclick='setGerudoCard(this)'>Start with Card<br>
+                <fieldset id='otherOptionsFieldset'>
+                    <legend>Gerudo Fortress</legend>
+                    <label class='fieldsetRadio'>
+                        <div>Default</div>
+                        <input type='radio' id='gerudoCardDefault' name='gerudoCard' value='Default' checked='true' onclick='setGerudoCard(this)'>
+                    </label><br>
+                    <label class='fieldsetRadio'>
+                        <div>Start with Card</div>
+                        <input type='radio' id='gerudoCardStartWith' name='gerudoCard' value='StartWith' onclick='setGerudoCard(this)'>
+                    </label>
                 </fieldset>
             </fieldset>
         </fieldset>

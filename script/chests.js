@@ -95,49 +95,49 @@ var dungeons = [
         y: "28.0%",
         chestlist: {
             ['Lobby Left Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Bow; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Bow; } },
             ['Lobby Right Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Bow ; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Bow ; } },
             ['Stalfos Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && (items.Bow || items.Hookshot || items.HoverBoots); } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && (items.Bow || items.Hookshot || items.HoverBoots); } },
             ['Beamos Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && (items.Bow || items.Hookshot || items.HoverBoots) && items.Bombs; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && (items.Bow || items.Hookshot || items.HoverBoots) && items.Bombs; } },
             ['Hidden Ceiling Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && (items.Bow || items.Hookshot) && items.Lens && items.Magic ; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && (items.Bow || items.Hookshot) && items.Lens && items.Magic ; } },
             ['Maze Path First Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
             ['Maze Path Second Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
             ['Maze Path Third Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
             ['Maze Path Final Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
             ['Maze Right Central Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
             ['Maze Right Side Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
             ['Maze Right Side Key']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic && items.SongofTime && items.Bow; } },
             ['Underwater Silver Rupee Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.SongofTime && items.IronBoots; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.SongofTime && items.IronBoots; } },
             ['Hammer Room Clear Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && (items.SongofTime || items.HoverBoots || items.Hookshot >=2 || (items.Lens && items.Magic)); } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && (items.SongofTime || items.HoverBoots || items.Hookshot >=2 || (items.Lens && items.Magic)); } },
             ['Hammer Room Switch Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Hammer && (items.SongofTime || items.HoverBoots || items.Hookshot >=2 || (items.Lens && items.Magic)); } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Hammer && (items.SongofTime || items.HoverBoots || items.Hookshot >=2 || (items.Lens && items.Magic)); } },
             ['Eye Statue Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Bow && (items.SongofTime || items.HoverBoots || items.Hookshot >=2 || (items.Lens && items.Magic)); } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Bow && (items.SongofTime || items.HoverBoots || items.Hookshot >=2 || (items.Lens && items.Magic)); } },
             ['Near Scarecrow Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Lens && items.Magic; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Lens && items.Magic; } },
             ['Before Heavy Block Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot; } },
             ['Heavy Block First Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic; } },
             ['Heavy Block Second Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic; } },
             ['Heavy Block Third Chest']: { isAvailable:  function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic; } },
             ['Heavy Block Fourth Chest']: { isAvailable: function () {
-                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic; } },
+                return (items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && items.Hookshot && items.Glove >= 2 && items.Lens && items.Magic; } },
         },
         isBeatable: function(){
             return this.canGetChest();
@@ -958,7 +958,7 @@ var chests = [
         x: "18.8%",
         y: "23.0%",
         isAvailable: function(){
-            if((items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'startWith') && (items.HoverBoots || items.Hookshot))
+            if((items.EponasSong || items.Hookshot >= 2 || gerudoLogic == 'StartWith') && (items.HoverBoots || items.Hookshot))
                 return "available";
             return "unavailable";
         }
@@ -988,7 +988,7 @@ var chests = [
         x: "14.0%",
         y: "25.0%",
         isAvailable: function(){
-            if((((items.EponasSong || gerudoLogic == 'startWith') && items.HoverBoots) || items.Hookshot >= 2) && ((items.Dins || (items.Fire && items.Bow)) && items.Magic))
+            if((((items.EponasSong || gerudoLogic == 'StartWith') && items.HoverBoots) || items.Hookshot >= 2) && ((items.Dins || (items.Fire && items.Bow)) && items.Magic))
                 return "available";
             return "unavailable";
         }
@@ -998,7 +998,7 @@ var chests = [
         x: "04.5%",
         y: "21.5%",
         isAvailable: function(){
-            if( ((((items.EponasSong || gerudoLogic == 'startWith') && items.HoverBoots) || items.Hookshot >= 2) && items.Lens && items.Magic) || items.RequiemofSpirit)
+            if( ((((items.EponasSong || gerudoLogic == 'StartWith') && items.HoverBoots) || items.Hookshot >= 2) && items.Lens && items.Magic) || items.RequiemofSpirit)
                 return "available";
             return "unavailable";
         }
@@ -1008,7 +1008,7 @@ var chests = [
         x: "08.0%",
         y: "19.0%",
         isAvailable: function(){
-            if( (((((items.EponasSong || gerudoLogic == 'startWith') && items.HoverBoots) || items.Hookshot >= 2) && items.Lens && items.Magic) || items.RequiemofSpirit) && items.Bombs && items.ZeldasLullaby)
+            if( (((((items.EponasSong || gerudoLogic == 'StartWith') && items.HoverBoots) || items.Hookshot >= 2) && items.Lens && items.Magic) || items.RequiemofSpirit) && items.Bombs && items.ZeldasLullaby)
                 return "available";
             return "unavailable";
         }

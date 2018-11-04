@@ -65,6 +65,14 @@ body{
     background-size: 200% 200%;
 }
 
+.trackerOption {
+    width: 100%;
+}
+
+.trackerOptionText {
+    display: inline-block;
+}
+
 input {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -79,10 +87,11 @@ label {
     display:inline-block;
     *display: inline;     /* for IE7*/
     zoom:1;              /* for IE7*/
-    float: left;
-    padding-top: 5px;
     text-align: right;
-    width: 140px;
+}
+
+legend {
+    white-space: nowrap;
 }
 
 .lonk{
@@ -279,4 +288,22 @@ label {
 
 .mapspan:hover .tooltip {
     visibility: visible;
+}
+
+#otherOptionsFieldset {
+    float: right;
+    width: 45%;
+    display: inline-block;
+}
+#rainbowBridgeLogicFieldset {
+    float: left;
+    width: 45%;
+    display: inline-block;
+}
+.fieldsetRadio div {
+    width: 100px;
+    display: inline-block;
+}
+.fieldsetRadio {
+    white-space: nowrap;
 }
