@@ -90,7 +90,7 @@ function loadCookie() {
 
     for (rbuttonID in document.getElementsByName('gerudoCard')) {
         rbutton = document.getElementsByName('gerudoCard')[rbuttonID];
-        if (rbutton.value == cookieobj.gerudoLogic)
+        if (rbutton.value == cookieobj.gerudoLogic && cookieobj.gerudoLogic)
             rbutton.click();
     }
 
