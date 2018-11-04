@@ -844,7 +844,7 @@ function isBridgeOpen() {
         case "Open":
             return true;
         case "Vanilla":
-            return (items['ShadowMedallion'] && items['SpiritMedallion']);
+            return (items['ShadowMedallion'] && items['SpiritMedallion'] && items['Light']);
         case "Medallions":
             return (items['ForestMedallion'] && items['FireMedallion'] && 
                 items['WaterMedallion'] && items['LightMedallion'] && 
