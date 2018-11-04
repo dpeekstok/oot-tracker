@@ -1,7 +1,8 @@
 var medallions = [];
-var dungeonImg = ['Unknown', 'Slingshot0', 'Bombs0', 'Boomerang', 'Bow0', 'Hammer', 'Hookshot0', 'HoverBoots', 'MirrorShield']
-ganonlogic = 'Open';
-showprizes = false;
+var dungeonImg = ['Unknown', 'Slingshot0', 'Bombs0', 'Boomerang', 'Bow0', 'Hammer', 'Hookshot0', 'HoverBoots', 'MirrorShield'];
+var ganonlogic = 'Open';
+var gerudoLogic = 'default';
+var showprizes = false;
 
 var itemGrid = [];
 var itemLayout = [];
@@ -40,6 +41,7 @@ var cookieDefault = {
     mZoom:100,
     mPos:0,
     glogic:'Open',
+    gerudoLogic:'startWith',
     prize:1,
     items:defaultItemGrid,
     obtainedItems:items,
@@ -81,8 +83,14 @@ function loadCookie() {
     document.getElementsByName('showprizes')[0].onchange();
 
     for (rbuttonID in document.getElementsByName('ganonlogic')) {
-        rbutton = document.getElementsByName('ganonlogic')[rbuttonID]
+        rbutton = document.getElementsByName('ganonlogic')[rbuttonID];
         if (rbutton.value == cookieobj.glogic)
+            rbutton.click();
+    }
+
+    for (rbuttonID in document.getElementsByName('gerudoCard')) {
+        rbutton = document.getElementsByName('gerudoCard')[rbuttonID];
+        if (rbutton.value == cookieobj.gerudoLogic)
             rbutton.click();
     }
 
@@ -105,9 +113,15 @@ function saveCookie() {
     cookieobj.prize = document.getElementsByName('showprizes')[0].checked ? 1 : 0;
 
     for (rbuttonID in document.getElementsByName('ganonlogic')) {
-        rbutton = document.getElementsByName('ganonlogic')[rbuttonID]
+        rbutton = document.getElementsByName('ganonlogic')[rbuttonID];
         if (rbutton.checked)
             cookieobj.glogic = rbutton.value;
+    }
+
+    for (rbuttonID in document.getElementsByName('gerudoCard')) {
+        rbutton = document.getElementsByName('gerudoCard')[rbuttonID];
+        if (rbutton.checked)
+            cookieobj.gerudoLogic = rbutton.value;
     }
 
     cookieobj.items = JSON.parse(JSON.stringify(itemLayout));
@@ -247,6 +261,12 @@ function setGanonLogic(sender) {
     ganonlogic = sender.value;
     updateMap();
     saveCookie();
+}
+
+function setGerudoCard(sender) {
+    gerudoLogic = sender.value;
+    updateMap();
+    saveCookie();    
 }
 
 function setZoom(target, sender) {
