@@ -21,6 +21,20 @@
                     <ul onselectstart="return false" id='submaplist' style="margin-top: 4px; margin-bottom: 4px; overflow-y: auto; height: 232px;">
                     </ul>
                 </div>
+                <div id='chestsDiv'>
+                </div>
+                <div id="skullsDiv" style='display:none;'>
+                </div>
+                <div id='mapSelect'>
+                    <label>
+                        <input type='radio' id='mapRadioChests' name='mapRadio' onclick='changeMap(this)' checked='true'>
+                        <span>Show Chests</span>
+                    </label>
+                    <label>
+                        <input type='radio' id='mapRadioSkulls' name='mapRadio' onclick='changeMap(this)'>
+                        <span>Show Gold Skultulas</span>
+                    </label>
+                </div>
             </div>
         </div>
         

@@ -740,7 +740,7 @@ function itemConfigClick (sender) {
 }
 
 function populateMapdiv() {
-    var mapdiv = document.getElementById('mapdiv');
+    var chestsDiv = document.getElementById('chestsDiv');
 
     // Initialize all chests on the map
     for(k=0; k<chests.length; k++){
@@ -763,7 +763,7 @@ function populateMapdiv() {
         ss.innerHTML = chests[k].name;
         s.appendChild(ss);
 
-        mapdiv.appendChild(s);
+        chestsDiv.appendChild(s);
     }
 
     // Dungeon bosses & chests
@@ -804,7 +804,7 @@ function populateMapdiv() {
         ss.innerHTML = dungeons[k].name;
         s.appendChild(ss);
 
-        mapdiv.appendChild(s);
+        chestsDiv.appendChild(s);
     }
 
     document.getElementById('submaparea').innerHTML = dungeons[dungeonSelect].name;
@@ -917,6 +917,15 @@ function addLoadEvent(func) {
             }
             func();
         }
+    }
+}
+function changeMap (element) {
+    if (element.id === 'mapRadioChests') {
+        document.getElementById('chestsDiv').style.display = 'block';
+        document.getElementById('skullsDiv').style.display = 'none';
+    } else {
+        document.getElementById('chestsDiv').style.display = 'none';
+        document.getElementById('skullsDiv').style.display = 'block';
     }
 }
 addLoadEvent(preloader);
